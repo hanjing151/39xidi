@@ -1,0 +1,371 @@
+@charset "UTF-8";
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, .info h4, .wuliu h4, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, .input_rmb label, .user label, .password label, .username label, .yanzheng label, .mima label, .reset label, .addr span, .xiadan span, .addr select, .xiadan select, button, textarea, menu { margin: 0; padding: 0; }
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details { display: block; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th { text-align: left; font-weight: normal; }
+
+html, body, fieldset, img, iframe, abbr { border: 0; }
+
+i, cite, em, var, address, dfn { font-style: normal; }
+
+[hidefocus], summary { outline: 0; }
+
+li { list-style: none; }
+
+h1, h2, h3, h4, h5, h6, small { font-size: 100%; }
+
+sup, sub { font-size: 83%; }
+
+pre, code, kbd, samp { font-family: inherit; }
+
+q:before, q:after { content: none; }
+
+textarea { overflow: auto; resize: none; }
+
+label, summary { cursor: default; }
+
+a, button { cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6, em, strong, b { font-weight: normal; }
+
+del, ins, u, s, a, a:hover { text-decoration: none; }
+
+address, caption, cite, code, dfn, em, th, var, i { font-style: normal; font-weight: normal; }
+
+input, .input_rmb label, .user label, .password label, .username label, .yanzheng label, .mima label, .reset label, .addr span, .xiadan span, .addr select, .xiadan select, textarea, button, select { -webkit-appearance: none; -moz-appearance: none; }
+
+body, textarea, input, .input_rmb label, .user label, .password label, .username label, .yanzheng label, .mima label, .reset label, .addr span, .xiadan span, .addr select, .xiadan select, button, select { font: 12px/1.14 arial,\5b8b\4f53; color: #333; outline: 0; }
+
+body { background: #fff; }
+
+a, a:hover { color: #333; }
+
+a, img { -webkit-touch-callout: none; /* 禁止长按链接与图片弹出菜单 */ }
+
+html, body { -webkit-user-select: none; /* 禁止选中文本（如无文本选中需求，此为必选项） */ user-select: none; }
+
+.clear { clear: both; width: 100%; }
+
+html { font-size: 20px; }
+
+@media only screen and (min-width: 360px) { html { font-size: 22.5px !important; } }
+@media only screen and (min-width: 375px) { html { font-size: 23.4375px !important; } }
+@media only screen and (min-width: 384px) { html { font-size: 24px !important; } }
+@media only screen and (min-width: 401px) { html { font-size: 25px !important; } }
+@media only screen and (min-width: 414px) { html { font-size: 25.875px !important; } }
+@media only screen and (min-width: 428px) { html { font-size: 26.75px !important; } }
+@media only screen and (min-width: 481px) { html { font-size: 30px !important; } }
+@media only screen and (min-width: 569px) { html { font-size: 35px !important; } }
+@media only screen and (min-width: 641px) { html { font-size: 40px !important; } }
+/*表单控件美化*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) { input[type="checkbox"], .input_rmb label[type="checkbox"], .user label[type="checkbox"], .password label[type="checkbox"], .username label[type="checkbox"], .yanzheng label[type="checkbox"], .mima label[type="checkbox"], .reset label[type="checkbox"], .addr span[type="checkbox"], .xiadan span[type="checkbox"], .addr select[type="checkbox"], .xiadan select[type="checkbox"], select, input[type="radio"], .input_rmb label[type="radio"], .user label[type="radio"], .password label[type="radio"], .username label[type="radio"], .yanzheng label[type="radio"], .mima label[type="radio"], .reset label[type="radio"], .addr span[type="radio"], .xiadan span[type="radio"], .addr select[type="radio"], .xiadan select[type="radio"] { position: relative; -webkit-appearance: none; -webkit-user-select: none; border: 1px solid rgba(0, 0, 0, 0.25); border-radius: 2px; /*box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08), inset 0 1px 2px rgba(255, 255, 255, 0.75);margin: 0 1px 0 0;*/ }
+  input[type='checkbox'], .input_rmb label[type='checkbox'], .user label[type='checkbox'], .password label[type='checkbox'], .username label[type='checkbox'], .yanzheng label[type='checkbox'], .mima label[type='checkbox'], .reset label[type='checkbox'], .addr span[type='checkbox'], .xiadan span[type='checkbox'], .addr select[type='checkbox'], .xiadan select[type='checkbox'] { bottom: 2px; height: 15px; vertical-align: middle; width: 15px; }
+  input[type='checkbox']:checked::before, .input_rmb label[type='checkbox']:checked::before, .user label[type='checkbox']:checked::before, .password label[type='checkbox']:checked::before, .username label[type='checkbox']:checked::before, .yanzheng label[type='checkbox']:checked::before, .mima label[type='checkbox']:checked::before, .reset label[type='checkbox']:checked::before, .addr span[type='checkbox']:checked::before, .xiadan span[type='checkbox']:checked::before, .addr select[type='checkbox']:checked::before, .xiadan select[type='checkbox']:checked::before { position: absolute; left: 3px; top: 6px; content: ''; height: 2px; background-color: #f44623; width: 72%; -webkit-transform: rotate(120deg); }
+  input[type='checkbox']:checked::after, .input_rmb label[type='checkbox']:checked::after, .user label[type='checkbox']:checked::after, .password label[type='checkbox']:checked::after, .username label[type='checkbox']:checked::after, .yanzheng label[type='checkbox']:checked::after, .mima label[type='checkbox']:checked::after, .reset label[type='checkbox']:checked::after, .addr span[type='checkbox']:checked::after, .xiadan span[type='checkbox']:checked::after, .addr select[type='checkbox']:checked::after, .xiadan select[type='checkbox']:checked::after { position: absolute; left: 2px; top: 8px; content: ''; height: 2px; width: 4px; background-color: #f44623; -webkit-transform: rotate(-150deg); }
+  input[type="radio"], .input_rmb label[type="radio"], .user label[type="radio"], .password label[type="radio"], .username label[type="radio"], .yanzheng label[type="radio"], .mima label[type="radio"], .reset label[type="radio"], .addr span[type="radio"], .xiadan span[type="radio"], .addr select[type="radio"], .xiadan select[type="radio"] { border-radius: 100%; height: 20px; vertical-align: middle; width: 20px; bottom: 1px; margin-right: 3px; }
+  input[type='radio']:checked::before, .input_rmb label[type='radio']:checked::before, .user label[type='radio']:checked::before, .password label[type='radio']:checked::before, .username label[type='radio']:checked::before, .yanzheng label[type='radio']:checked::before, .mima label[type='radio']:checked::before, .reset label[type='radio']:checked::before, .addr span[type='radio']:checked::before, .xiadan span[type='radio']:checked::before, .addr select[type='radio']:checked::before, .xiadan select[type='radio']:checked::before { background-color: #f44623; border-radius: 100%; bottom: 3px; content: ''; display: block; left: 3px; position: absolute; right: 3px; top: 3px; }
+  input[type='checkbox']:active, .input_rmb label[type='checkbox']:active, .user label[type='checkbox']:active, .password label[type='checkbox']:active, .username label[type='checkbox']:active, .yanzheng label[type='checkbox']:active, .mima label[type='checkbox']:active, .reset label[type='checkbox']:active, .addr span[type='checkbox']:active, .xiadan span[type='checkbox']:active, .addr select[type='checkbox']:active, .xiadan select[type='checkbox']:active, select:active, input[type='radio']:active, .input_rmb label[type='radio']:active, .user label[type='radio']:active, .password label[type='radio']:active, .username label[type='radio']:active, .yanzheng label[type='radio']:active, .mima label[type='radio']:active, .reset label[type='radio']:active, .addr span[type='radio']:active, .xiadan span[type='radio']:active, .addr select[type='radio']:active, .xiadan select[type='radio']:active { background-image: -webkit-linear-gradient(#fcfcfc, #f8f8f8 38%, #e7e7e7); box-shadow: none; text-shadow: none; }
+  select { -webkit-appearance: none; height: 28px; -webkit-padding-end: 18px; -webkit-padding-start: 6px; background-position: right center; background-repeat: no-repeat; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAICAYAAAAbQcSUAAAAaUlEQVQoz2P4//8/A7UwdkEGhiggTsODo4g2LBEImJmZvwE1/UfHIHGQPNGGAbHCggULFrKxsf1ENgjEB4mD5EnxJoaByAZB5Yk3DNlAPj6+L8gGkWUYzMC3b982IRtEtmFQjaxYxDAwAGi4TwMYKNLfAAAAAElFTkSuQmCC"), -webkit-linear-gradient(#fcfcfc, #fcfcfc 38%, #fcfcfc); }
+  select:hover { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAICAYAAAAbQcSUAAAAaUlEQVQoz2P4//8/A7UwdkEGhiggTsODo4g2LBEImJmZvwE1/UfHIHGQPNGGAbHCggULFrKxsf1ENgjEB4mD5EnxJoaByAZB5Yk3DNlAPj6+L8gGkWUYzMC3b982IRtEtmFQjaxYxDAwAGi4TwMYKNLfAAAAAElFTkSuQmCC"); }
+  select:active { background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAICAYAAAAbQcSUAAAAaUlEQVQoz2P4//8/A7UwdkEGhiggTsODo4g2LBEImJmZvwE1/UfHIHGQPNGGAbHCggULFrKxsf1ENgjEB4mD5EnxJoaByAZB5Yk3DNlAPj6+L8gGkWUYzMC3b982IRtEtmFQjaxYxDAwAGi4TwMYKNLfAAAAAElFTkSuQmCC"); }
+  select:disabled { color: #999; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAICAYAAAAbQcSUAAAAaUlEQVQoz2P4//8/A7UwdkEGhiggTsODo4g2LBEImJmZvwE1/UfHIHGQPNGGAbHCggULFrKxsf1ENgjEB4mD5EnxJoaByAZB5Yk3DNlAPj6+L8gGkWUYzMC3b982IRtEtmFQjaxYxDAwAGi4TwMYKNLfAAAAAElFTkSuQmCC"), -webkit-linear-gradient(#f8f8f8, #f8f8f8 38%, #f8f8f8); } }
+@font-face { font-family: "iconfont"; src: url("iconfont.eot");
+  /* IE9*/
+  src: url("iconfont.eot?#iefix") format("embedded-opentype"), url("iconfont.woff") format("woff"), url("iconfont.ttf") format("truetype"), url("iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont { font-family: "iconfont" !important; font-style: normal; -webkit-font-smoothing: antialiased; -webkit-text-stroke-width: 0; -moz-osx-font-smoothing: grayscale; }
+
+.icon-shouye:before { content: "\e601"; }
+
+.icon-wo:before { content: "\e602"; }
+
+.icon-quanbudingdan:before { content: "\e603"; }
+
+/* 
+.icon-houtui:before { content: "\e600"; }
+.icon-chaxun:before { content: "\e604"; }
+.icon-wentizixun:before { content: "\e605"; }
+.icon-fanwei:before { content: "\e606"; }
+.icon-yijianfankui:before { content: "\e608"; }
+.icon-lianxizixun:before { content: "\e609"; }
+.icon-shouz:before { content: "\e60e"; } */
+.icon-yifu:before { content: "\e607"; }
+
+.icon-shopping:before { content: "\e60a"; }
+
+.icon-wuliuxingye:before { content: "\e60b"; }
+
+.icon-dingdan:before { content: "\e60c"; }
+
+.icon-sort:before { content: "\e60d"; }
+
+.icon-baodijine:before { content: "\e60f"; }
+
+.icon-shijian:before { content: "\e610"; }
+
+body { font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; background: #f1f1f1; }
+
+.wrap { width: 16rem; margin: 0 auto; padding-bottom: 2.5rem; }
+
+.more_list { position: absolute; width: 16rem; height: 100%; z-index: 998; display: none; background: rgba(255, 255, 255, 0); }
+.more_list ul { width: 4.15rem; position: absolute; z-index: 999; right: .35rem; top: 2.75rem; padding: 0.25rem 0; text-align: center; background: rgba(33, 150, 243, 0.9); font-size: 0.65rem; }
+.more_list ul li { line-height: 1.75rem; }
+.more_list ul li a { color: #fff; display: block; }
+
+.header { padding: 0 .7rem; height: 2.5rem; color: #fff; line-height: 2.5rem; background: #2196f3; }
+.header .logo { width: 4.8rem; float: left; text-indent: -99rem; font-size: 0.75rem; background: url(../images/applogo.png) no-repeat left; background-size: 100%; }
+.header .more { width: 2rem; height: 1rem; display: block; float: right; margin-right: .05rem; margin-top: 0.75rem; background: url(../images/more.png) no-repeat right; background-size: .24rem; padding-right: .7rem; }
+.header .details { font-size: 0.9rem; height: 2.5rem; background: url(../images/left.png) no-repeat left; background-size: .8rem; }
+.header .details .icon-houtui, .header .details .icon-houtui:before { font-size: 0.75rem; color: #fff; padding-left: 1.6rem; }
+
+.banner { position: relative; width: 16rem; height: 6.75rem; overflow: hidden; }
+.banner img { width: 16rem; height: 6.75rem; }
+.banner .on_list { position: relative; }
+.banner .on_list ul { width: 16rem; text-align: center; position: absolute; bottom: .35rem; }
+.banner .on_list li { text-indent: -99rem; width: 0.4rem; height: 0.4rem; border-radius: 100%; background: rgba(255, 255, 255, 0.5); margin: 0 .1rem; display: inline-block; }
+.banner .active { background: #ffc107 !important; }
+
+.near_body img { max-width: 16rem; }
+
+.index { width: 16rem; height: 15rem; background: url(../images/index.png) no-repeat center; background-size: 100%; display: block; text-align: center; margin-top: .5rem; position: relative; }
+.index h1 { padding-top: 0.6rem; font-size: 0.6rem; }
+.index h1 a { color: #757575; }
+.index h1 b { margin: 0 .2rem; color: #f33; }
+.index .xiadan_btn a { animation: animate 1.5s linear 2s; -webkit-animation: animate 1.5s linear 2s; -moz-animation: animate 1.5s linear 2s; -o-animation: animate 1.5s linear 2s; display: block; width: 8.25rem; height: 8.25rem; position: absolute; left: 3.88rem; top: 2.95rem; z-index: 99; }
+@keyframes animate { 0% { transform: rotate(0deg); }
+  25% { transform: rotate(180deg); }
+  50% { transform: rotate(360deg); }
+  75% { transform: rotate(180deg); }
+  100% { transform: rotate(0deg); } }
+@-webkit-keyframes animate { 0% { -webkit-transform: rotate(0deg); }
+  25% { -webkit-transform: rotate(180deg); }
+  50% { -webkit-transform: rotate(360deg); }
+  75% { -webkit-transform: rotate(180deg); }
+  100% { -webkit-transform: rotate(0deg); } }
+@-moz-keyframes animate { 0% { -webkit-transform: rotate(0deg); }
+  25% { -webkit-transform: rotate(180deg); }
+  50% { -webkit-transform: rotate(360deg); }
+  75% { -webkit-transform: rotate(180deg); }
+  100% { -webkit-transform: rotate(0deg); } }
+@-o-keyframes animate { 0% { -webkit-transform: rotate(0deg); }
+  25% { -webkit-transform: rotate(180deg); }
+  50% { -webkit-transform: rotate(360deg); }
+  75% { -webkit-transform: rotate(180deg); }
+  100% { -webkit-transform: rotate(0deg); } }
+.index .xiadan_btn a i { width: 2.8rem; height: 2.8rem; display: block; position: absolute; display: none; }
+.index .xiadan_btn a .qunzi { left: 2.7rem; background: url(../images/qunzi.png) no-repeat center 0.35rem; background-size: 32%; }
+.index .xiadan_btn a .xizhuang { top: 0.55rem; left: 4.8rem; background: url(../images/xizhuang.png) no-repeat center; background-size: 52%; }
+.index .xiadan_btn a .maozi { top: 2.8rem; right: .55rem; background: url(../images/maozi.png) no-repeat right center; background-size: 43%; }
+.index .xiadan_btn a .xiezi { top: 4.9rem; left: 4.7rem; background: url(../images/xiezi.png) no-repeat center; background-size: 55%; }
+.index .xiadan_btn a .kuzi { bottom: -.3rem; left: 2.7rem; background: url(../images/kuzi.png) no-repeat center; background-size: 32%; }
+.index .xiadan_btn a .neiyi { top: 4.95rem; left: .65rem; background: url(../images/neiyi.png) no-repeat center; background-size: 52%; }
+.index .xiadan_btn a .bao { top: 2.8rem; left: .32rem; background: url(../images/bao.png) no-repeat left center; background-size: 48%; }
+.index .xiadan_btn a .txu { top: 0.5rem; left: .5rem; background: url(../images/txu.png) no-repeat center; background-size: 52%; }
+.index .single, .index .single1 { width: 9.25rem; height: 9.25rem; position: absolute; left: 3.38rem; top: 2.4rem; border-radius: 100%; display: block; text-align: center; }
+.index .single em, .index .single1 em { position: absolute; width: 9.25rem; height: 9.25rem; background: rgba(33, 150, 243, 0.05); border-radius: 50%; box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.4); opacity: 0; left: 0; animation: halo 1s 3.8s infinite ease-out; -webkit-animation: halo 1s 3.8s infinite ease-out; -o-animation: halo 1s 3.8s infinite ease-out; -moz-animation: halo 1s 3.8s infinite ease-out; }
+@keyframes halo { 0% { opacity: 0; transform: scale(0.9); }
+  50% { opacity: 1; }
+  100% { opacity: 0; transform: scale(1.05); } }
+@-webkit-keyframes halo { 0% { opacity: 0; -webkit-transform: scale(0.92); }
+  50% { opacity: 1; }
+  100% { opacity: 0; -webkit-transform: scale(1.05); } }
+@-o-keyframes halo { 0% { opacity: 0; -webkit-transform: scale(0.92); }
+  50% { opacity: 1; }
+  100% { opacity: 0; -webkit-transform: scale(1.05); } }
+@-moz-keyframes halo { 0% { opacity: 0; -moz-transform: scale(0.92); }
+  50% { opacity: 1; }
+  100% { opacity: 0; -moz-transform: scale(1.05); } }
+.index .single1 { width: 10rem; height: 10rem; left: 3rem; top: 2.05rem; }
+.index .single1 em { width: 10rem; height: 10rem; }
+.index .bottom_btn { position: absolute; bottom: .4rem; margin: 0 .9rem; border-radius: 0; }
+.index .bottom_btn a { width: 7rem; height: 2.25rem; display: block; display: inline-block; margin-right: .1rem; }
+
+.state_tab, .xidi_tab { width: 16rem; height: 2.1rem; background: #fff; box-shadow: 0 0rem 0.1rem #d5d5d5; }
+.state_tab li, .xidi_tab li { width: 8rem; height: 2rem; line-height: 2rem; float: left; text-align: center; font-size: 0.7rem; border-bottom: .1rem solid #fff; }
+.state_tab .tab_on, .xidi_tab .tab_on { border-bottom: 0.1rem solid #2196f3; }
+
+.state_body { width: 16rem; margin: .7rem 0; }
+.state_body ul { display: none; }
+.state_body ul a { display: block; }
+.state_body ul a:active, .state_body ul a:visited { color: #333; }
+.state_body ul li { padding: .7rem; background: #fff; margin-bottom: .6rem; overflow: hidden; box-shadow: 0 0 0.1rem #d5d5d5; }
+.state_body ul li dl dt { margin-right: .7rem; width: 3.4rem; height: 3.4rem; padding-top: .5rem; float: left; }
+.state_body ul li dl dt i { width: 3.4rem; height: 3.4rem; display: block; text-align: center; line-height: 3.4rem; }
+.state_body ul li dl dd { float: left; width: 10.5rem; font-size: 0.65rem; line-height: 1.1rem; }
+.state_body ul li dl dd b { margin-left: .3rem; color: #757575; }
+.state_body ul li dl .icon-yifu:before { font-size: 2rem; background: #f80; display: block; color: #fff; border-radius: 100%; }
+.state_body ul li dl .icon-shopping:before { font-size: 2rem; background: #2196f3; display: block; color: #fff; border-radius: 100%; }
+.state_body ul li dl .icon-wuliuxingye:before, .state_body ul li dl .icon-dingdan:before, .state_body ul li dl .icon-sort:before, .state_body ul li dl .icon-baodijine:before, .state_body ul li dl .icon-shijian:before { font-size: 0.9rem; margin-right: .3rem; }
+
+.xidi_tab { box-shadow: none; border-bottom: 0.05rem solid #d5d5d5; }
+
+.xidi_list { display: none; }
+.xidi_list .xidi_left { border-right: 0.05rem solid #d5d5d5; z-index: 1; background: #fff; width: 3.8rem; height: 75%; position: absolute; }
+.xidi_list .xidi_left li { width: 3.8rem; line-height: 2.5rem; text-align: center; border-bottom: 0.05rem solid #d5d5d5; font-size: 0.7rem; }
+.xidi_list .xidi_left .xidi_on { width: 3.7rem; border-left: .15rem solid #f80; border-right: .05rem solid #fff; background: #fff; }
+.xidi_list .xidi_right { margin-left: 3.8rem; }
+.xidi_list .xidi_right .xidi_ad { width: 11.2rem; height: 3.5rem; padding: .4rem 0 .3rem; }
+.xidi_list .xidi_right .xidi_ad img { width: 100%; }
+.xidi_list .xidi_right ul { overflow: hidden; border-left: 0.05rem solid #d5d5d5; display: none; padding: 0.6rem 0 0 0.4rem; }
+.xidi_list .xidi_right ul li { width: 3.4rem; float: left; text-align: center; margin: 0 .5rem .7rem 0; }
+.xidi_list .xidi_right ul li img { width: 3.4rem; margin-bottom: .3rem; }
+.xidi_list .xidi_right ul li p, .xidi_list .xidi_right ul li .info h4, .info .xidi_list .xidi_right ul li h4, .xidi_list .xidi_right ul li .wuliu h4, .wuliu .xidi_list .xidi_right ul li h4 { font-size: 0.6rem; line-height: .8rem; }
+.xidi_list .daixi { width: 16rem; padding-bottom: .5rem; }
+.xidi_list .daixi img { max-width: 16rem; }
+
+.server { width: 16rem; }
+.server img { max-width: 16rem; }
+
+.code, .zhanghu { height: 2.1rem; line-height: 2.1rem; padding: 0 .75rem; font-size: 0.65rem; background: #fff; box-shadow: 0 0.025rem 0.1rem #d5d5d5; }
+.code i, .zhanghu i { float: right; color: #757575; }
+.code span, .zhanghu span { color: #ffc107; margin-left: .2rem; }
+
+.info, .wuliu { width: 14.6rem -1.4rem; margin: .5rem .7rem 0; padding: .7rem; background: #fff; box-shadow: 0 0 0.125rem #bbb; }
+.info h1, .wuliu h1 { font-size: 0.75rem; font-weight: bold; color: #666; margin-bottom: 1rem; }
+.info h3, .wuliu h3 { font-size: 0.75rem; line-height: 1.4rem; }
+.info h3 i, .wuliu h3 i { float: right; }
+.info p, .wuliu p, .info h4, .wuliu h4 { font-size: 0.65rem; line-height: 1.2rem; }
+.info p b, .wuliu p b, .info h4 b, .wuliu h4 b { color: #f33; margin: 0 .2rem; }
+.info p span, .wuliu p span, .info h4 span, .wuliu h4 span { float: right; }
+.info h4, .wuliu h4 { margin-top: 0.5rem; border-top: .05rem solid #e7e7e7; padding: .5rem 0; color: #757575; }
+
+.xiyi_info { padding-bottom: .6rem; margin: .5rem 0; font-size: 0.65rem; border-bottom: .05rem solid #e7e7e7; line-height: 1.2rem; }
+.xiyi_info span { width: 3.7rem; margin-right: .7rem; display: inline-block; }
+.xiyi_info span b { color: #ff4081; float: right; }
+.xiyi_info span:nth-last-child(3n+3) { margin-right: 0; }
+
+.btn { padding: 1.2rem .7rem .8rem; text-align: right; }
+.btn a { font-size: 0.65rem; padding: .45rem 1rem; background: #fff; border-radius: .15rem; box-shadow: 0 0 0.125rem #bbb; margin-left: .4rem; }
+.btn #pay { background: #2196f3; color: #fff; }
+
+.wuliu { margin-bottom: .5rem; }
+.wuliu ul { margin-left: .25rem; }
+.wuliu ul li { color: #222121; border-left: .1rem solid #e0e0e0; padding-bottom: .5rem; }
+.wuliu ul li i { width: 0.6rem; height: 0.6rem; background: #e0e0e0; border-radius: 100%; border: .1rem solid #e8e8e8; display: block; float: left; margin: 0 1rem 0 -0.43rem; }
+.wuliu ul li .step { margin-top: -.08rem; font-size: 0.65rem; float: left; width: 11.5rem; line-height: 1rem; }
+.wuliu ul li .step p, .wuliu ul li .step h4 { font-size: 0.6rem; color: #757575; }
+.wuliu ul li:first-child i { background: #ff4081; border: .1rem solid #ffbad2; }
+.wuliu ul li:last-child { height: auto; border-left: .1rem solid #fff; }
+.wuliu .yifu_img { margin-top: .3rem; }
+.wuliu .yifu_img img { width: 2.6rem; height: 2.6rem; margin: .05rem .14rem 0 0; }
+.wuliu .yifu_img img:nth-last-child(4n+4) { margin-right: 0; }
+
+.layermcont img { max-width: 16rem; max-height: 20rem; }
+
+.myinfo { height: 2.7rem; padding: .7rem; background: #fff; box-shadow: 0 0 0.1rem #bbb; }
+.myinfo .touxiang { float: left; }
+.myinfo .touxiang img { width: 2.7rem; height: 2.7rem; }
+.myinfo dl { float: left; margin-left: 1rem; }
+.myinfo dl dt { font-size: 0.9rem; font-weight: bold; }
+.myinfo dl dd { font-size: 0.7rem; color: #757575; margin-top: .4rem; }
+
+.money, .about { margin: .4rem 0; padding: 0 .7rem; background: #fff; box-shadow: 0 0 0.1rem #bbb; }
+.money li, .about li { background-size: 1.1rem; font-size: 0.75rem; height: 2.4rem; line-height: 2.4rem; border-bottom: .05rem solid #e7e7e7; }
+.money li:last-child, .about li:last-child { border-bottom: none; }
+.money li a, .about li a { display: block; }
+.money li a:active, .about li a:active, .money li a:visited, .about li a:visited { color: #333; }
+.money li strong, .about li strong { margin-left: .5rem; color: #f60; }
+.money li i, .about li i { width: 1.2rem; height: 1.2rem; display: block; float: left; background: url(../images/img.png) no-repeat; background-size: 1.2rem; margin: .5rem .6rem 0 0; }
+.money li span a, .about li span a { font-size: 0.75rem; float: right; color: #2196f3; background: url(../images/right.png) no-repeat right center; background-size: .4rem; padding-right: .7rem; }
+.money li .rmb, .about li .rmb { background: url(../images/money.png) no-repeat center bottom; background-size: 88%; }
+.money li .addr, .about li .addr, .money li .xiadan, .about li .xiadan { background: url(../images/addr.png) no-repeat center bottom; background-size: 88%; }
+
+.about .tel { background: url(../images/tel.png) no-repeat center bottom; background-size: 80%; }
+.about .updata { background: url(../images/updata.png) no-repeat center bottom; background-size: 65%; }
+.about .agreement { background: url(../images/agreement.png) no-repeat center bottom; background-size: 85%; }
+.about .our { background: url(../images/our.png) no-repeat center bottom; background-size: 90%; }
+
+.exit { height: 1.8rem; line-height: 1.8rem; text-align: center; background: #fff; margin: .8rem 0; box-shadow: 0 0 0.1rem #bbb; font-size: 0.7rem; }
+.exit a { color: #2196f3; display: block; }
+
+.zhanghu { font-size: 0.7rem; }
+.zhanghu i { color: #ff4081; }
+
+.input_rmb, .user, .password, .username, .yanzheng, .mima, .reset { width: 14.6rem; height: 2.1rem; margin: .7rem; background: #fff; box-shadow: 0 0 0.2rem #d5d5d5; overflow: hidden; }
+.input_rmb input, .user input, .password input, .username input, .yanzheng input, .mima input, .reset input, .input_rmb label, .user label, .password label, .username label, .yanzheng label, .mima label, .reset label, .input_rmb .addr span, .addr .input_rmb span, .user .addr span, .addr .user span, .password .addr span, .addr .password span, .username .addr span, .addr .username span, .yanzheng .addr span, .addr .yanzheng span, .mima .addr span, .addr .mima span, .reset .addr span, .addr .reset span, .input_rmb .xiadan span, .xiadan .input_rmb span, .user .xiadan span, .xiadan .user span, .password .xiadan span, .xiadan .password span, .username .xiadan span, .xiadan .username span, .yanzheng .xiadan span, .xiadan .yanzheng span, .mima .xiadan span, .xiadan .mima span, .reset .xiadan span, .xiadan .reset span, .input_rmb .addr select, .addr .input_rmb select, .user .addr select, .addr .user select, .password .addr select, .addr .password select, .username .addr select, .addr .username select, .yanzheng .addr select, .addr .yanzheng select, .mima .addr select, .addr .mima select, .reset .addr select, .addr .reset select, .input_rmb .xiadan select, .xiadan .input_rmb select, .user .xiadan select, .xiadan .user select, .password .xiadan select, .xiadan .password select, .username .xiadan select, .xiadan .username select, .yanzheng .xiadan select, .xiadan .yanzheng select, .mima .xiadan select, .xiadan .mima select, .reset .xiadan select, .xiadan .reset select { border: none; font-size: 0.65rem; height: .7rem; line-height: .9rem; padding: .7rem; }
+.input_rmb label, .user label, .password label, .username label, .yanzheng label, .mima label, .reset label { line-height: .6rem; float: right; color: #757575; }
+
+.num_btn { font-size: 0.65rem; width: 14.6rem; padding: .2rem .7rem; text-align: left; }
+.num_btn ul li { background: #fff; box-shadow: 0 0 0.1rem #bbb; float: left; font-size: 0.65rem; width: 4.6rem; text-align: center; margin: .8rem .4rem 0 0; padding: .6rem 0; }
+.num_btn ul li:nth-last-child(3n + 1) { margin-right: 0; }
+.num_btn ul .num_on { background: #ff4081; color: #fff; }
+
+.queren, .new_address, .save, .login { width: 14.6rem; margin: .8rem .7rem; }
+.queren a, .new_address a, .save a, .login a { font-size: 0.7rem; text-align: center; border-radius: .15rem; padding: .5rem 0; background: #2196f3; display: block; color: #fff; }
+.queren p, .new_address p, .save p, .login p, .queren .info h4, .info .queren h4, .new_address .info h4, .info .new_address h4, .save .info h4, .info .save h4, .login .info h4, .info .login h4, .queren .wuliu h4, .wuliu .queren h4, .new_address .wuliu h4, .wuliu .new_address h4, .save .wuliu h4, .wuliu .save h4, .login .wuliu h4, .wuliu .login h4 { line-height: 2rem; font-size: 0.6rem; color: #757575; }
+
+.address_list h5 { margin: .7rem; font-size: 0.65rem; color: #999; }
+.address_list li { padding: .45rem 1.35rem .6rem .7rem; border-bottom: .05rem solid #e7e7e7; position: relative; background: #fff; }
+.address_list li a:active, .address_list li a:visited { color: #333; }
+.address_list li h4 { font-size: 0.75rem; line-height: 1.5rem; }
+.address_list li h4 span { float: right; }
+.address_list li p, .address_list li .info h4, .info .address_list li h4, .address_list li .wuliu h4, .wuliu .address_list li h4 { font-size: 0.6rem; line-height: 1.1rem; color: #888; }
+.address_list li i { width: .4rem; height: .6rem; background: url(../images/edit.png) no-repeat right center; background-size: 100%; position: absolute; right: .6rem; top: 50%; margin-top: -.3rem; }
+
+.addr_select li { padding: .45rem .7rem .6rem .7rem; }
+
+.addr, .xiadan { width: 14.6rem; margin: .8rem .7rem; }
+.addr input, .xiadan input, .addr .input_rmb label, .input_rmb .addr label, .xiadan .input_rmb label, .input_rmb .xiadan label, .addr .user label, .user .addr label, .xiadan .user label, .user .xiadan label, .addr .password label, .password .addr label, .xiadan .password label, .password .xiadan label, .addr .username label, .username .addr label, .xiadan .username label, .username .xiadan label, .addr .yanzheng label, .yanzheng .addr label, .xiadan .yanzheng label, .yanzheng .xiadan label, .addr .mima label, .mima .addr label, .xiadan .mima label, .mima .xiadan label, .addr .reset label, .reset .addr label, .xiadan .reset label, .reset .xiadan label, .addr span, .xiadan span, .addr select, .xiadan select { font-size: 0.65rem; width: 13.3rem; padding: .6rem .6rem; height: .9rem; line-height: .76rem; background: #fff; margin-bottom: .7rem; border: .05rem solid #ddd; background: #fff; border-radius: .2rem; }
+.addr h3, .xiadan h3 { margin-top: 1rem; font-size: 0.7rem; margin-bottom: .7rem; height: 1rem; line-height: 1.1rem; }
+.addr h3 b, .xiadan h3 b { width: 1rem; height: 1rem; background: url(../images/weizhi.png) no-repeat left top; background-size: 100%; float: left; margin-right: .6rem; }
+.addr span, .xiadan span { display: block; background: #fff url(../images/bottom.png) no-repeat 96% center; background-size: .6rem; display: none; }
+.addr select, .xiadan select { width: 14.6rem; padding: .6rem .4rem; height: 2.18rem; background: #fff url(../images/bottom.png) no-repeat 96% center; background-size: .6rem; }
+.addr textarea, .xiadan textarea { width: 13.3rem; font-size: 0.6rem; padding: .6rem; margin-bottom: .7rem; border: .05rem solid #ddd; height: 3.5rem; line-height: 1rem; border-radius: .2rem; }
+
+.save .save_btn, .save .del_btn, .save .save_addr_btn { width: 6.9rem; float: right; border: none; background: #2196f3; color: #fff; height: 1.85rem; font-size: 0.6rem; border-radius: .15rem; text-align: center; }
+.save .del_btn { float: left; background: #fff; border: .05rem solid #ddd; color: #333; }
+.save .save_addr_btn { width: 14.6rem; }
+
+.xiadan { width: 14.6rem; }
+.xiadan input, .xiadan .input_rmb label, .input_rmb .xiadan label, .xiadan .user label, .user .xiadan label, .xiadan .password label, .password .xiadan label, .xiadan .username label, .username .xiadan label, .xiadan .yanzheng label, .yanzheng .xiadan label, .xiadan .mima label, .mima .xiadan label, .xiadan .reset label, .reset .xiadan label, .xiadan span, .xiadan select { width: 5.7rem; margin-right: .5rem; float: left; }
+.xiadan span { float: right; width: 5.8rem; margin-right: 0; background: #fff url(../images/bottom.png) no-repeat 94% center; background-size: .6rem; }
+.xiadan select { width: 7rem; margin-right: 0; float: right; background: #fff url(../images/bottom.png) no-repeat 94% center; background-size: .6rem; }
+
+.sel { border: .05rem solid #ddd; background: #fff; margin-bottom: .7rem; }
+.sel .addr_info { background: url(../images/edit.png) no-repeat 97% center; background-size: .4rem; padding: .6rem; }
+.sel .addr_info h4 { font-size: 0.7rem; line-height: 1rem; margin: 0 .5rem .3rem 0; }
+.sel .addr_info h4 em { float: right; }
+.sel .addr_info p, .sel .addr_info .info h4, .info .sel .addr_info h4, .sel .addr_info .wuliu h4, .wuliu .sel .addr_info h4 { font-size: 0.6rem; line-height: 1rem; }
+.sel a:active, .sel a:visited { color: #333; }
+
+.user, .password { margin: 1.5rem .7rem .8rem; }
+.user input, .password input, .user label, .password label, .user .addr span, .addr .user span, .password .addr span, .addr .password span, .user .xiadan span, .xiadan .user span, .password .xiadan span, .xiadan .password span, .user .addr select, .addr .user select, .password .addr select, .addr .password select, .user .xiadan select, .xiadan .user select, .password .xiadan select, .xiadan .password select { width: 11.4rem; background: url(../images/login.png) no-repeat 6% center; background-size: .85rem; padding-left: 2.5rem; color: #757575; }
+
+.password { margin: .8rem .7rem 1.4rem; }
+.password input, .password label, .password .addr span, .addr .password span, .password .xiadan span, .xiadan .password span, .password .addr select, .addr .password select, .password .xiadan select, .xiadan .password select { background: url(../images/password.png) no-repeat 6% center; background-size: .75rem; padding-left: 2.5rem; }
+
+.login input[type="submit"], .login .input_rmb label[type="submit"], .input_rmb .login label[type="submit"], .login .user label[type="submit"], .user .login label[type="submit"], .login .password label[type="submit"], .password .login label[type="submit"], .login .username label[type="submit"], .username .login label[type="submit"], .login .yanzheng label[type="submit"], .yanzheng .login label[type="submit"], .login .mima label[type="submit"], .mima .login label[type="submit"], .login .reset label[type="submit"], .reset .login label[type="submit"], .login .addr span[type="submit"], .addr .login span[type="submit"], .login .xiadan span[type="submit"], .xiadan .login span[type="submit"], .login .addr select[type="submit"], .addr .login select[type="submit"], .login .xiadan select[type="submit"], .xiadan .login select[type="submit"] { width: 14.6rem; border: none; font-size: 0.6rem; text-align: center; border-radius: .15rem; padding: .6rem 0; background: #2196f3; display: block; color: #fff; }
+.login p, .login .info h4, .info .login h4, .login .wuliu h4, .wuliu .login h4 { font-size: 0.6rem; color: #333; line-height: 1rem; margin-bottom: .5rem; }
+
+.zhuce { font-size: 0.6rem; }
+.zhuce a { display: block; text-align: center; padding: .4rem .7rem; margin: 0 .7rem; background: #fff; border: .05rem solid #ddd; border-radius: .2rem; }
+.zhuce a:active, .zhuce a:visited { color: #333; }
+
+.username { margin: 1.5rem .7rem .7rem; }
+.username input, .username label, .username .addr span, .addr .username span, .username .xiadan span, .xiadan .username span, .username .addr select, .addr .username select, .username .xiadan select, .xiadan .username select { width: 13.2rem; }
+
+.yanzheng { width: 9rem; margin: .7rem .7rem 0; }
+.yanzheng input, .yanzheng label, .yanzheng .addr span, .addr .yanzheng span, .yanzheng .xiadan span, .xiadan .yanzheng span, .yanzheng .addr select, .addr .yanzheng select, .yanzheng .xiadan select, .xiadan .yanzheng select { width: 7.6rem; }
+
+.yanzhengma { width: 5.2rem; text-align: center; float: right; margin-right: .7rem; background: #f80; box-shadow: 0 0 0.125rem #bbb; }
+.yanzhengma #code { background: none; border: none; width: 5.2rem; color: #fff; font-size: 0.6rem; line-height: 2.1rem; }
+
+.mima input, .mima label, .mima .addr span, .addr .mima span, .mima .xiadan span, .xiadan .mima span, .mima .addr select, .addr .mima select, .mima .xiadan select, .xiadan .mima select { width: 13.2rem; }
+
+.reset { margin-bottom: 1.5rem; }
+.reset input, .reset label, .reset .addr span, .addr .reset span, .reset .xiadan span, .xiadan .reset span, .reset .addr select, .addr .reset select, .reset .xiadan select, .xiadan .reset select { width: 13.2rem; }
+
+.ido { margin: .8rem .7rem; font-size: 0.6rem; }
+.ido input[type="checkbox"], .ido .input_rmb label[type="checkbox"], .input_rmb .ido label[type="checkbox"], .ido .user label[type="checkbox"], .user .ido label[type="checkbox"], .ido .password label[type="checkbox"], .password .ido label[type="checkbox"], .ido .username label[type="checkbox"], .username .ido label[type="checkbox"], .ido .yanzheng label[type="checkbox"], .yanzheng .ido label[type="checkbox"], .ido .mima label[type="checkbox"], .mima .ido label[type="checkbox"], .ido .reset label[type="checkbox"], .reset .ido label[type="checkbox"], .ido .addr span[type="checkbox"], .addr .ido span[type="checkbox"], .ido .xiadan span[type="checkbox"], .xiadan .ido span[type="checkbox"], .ido .addr select[type="checkbox"], .addr .ido select[type="checkbox"], .ido .xiadan select[type="checkbox"], .xiadan .ido select[type="checkbox"] { margin-right: .3rem; }
+.ido a { padding: 0 .2rem; color: #2196f3; }
+
+.foot_nav { width: 16rem; position: fixed; bottom: 0rem; display: block; z-index: 999; height: 2.3rem; padding-top: .2rem; border-top: .05rem solid #e7e7e7; background: #fff; }
+.foot_nav li { width: 5.33333rem; float: left; text-align: center; position: relative; }
+.foot_nav li a { display: block; font-size: 0.6rem; color: #757575; }
+.foot_nav i { width: .5rem; height: .5rem; display: block; background: #f30; border-radius: 100%; position: absolute; right: 1.9rem; top: 0rem; display: none; }
+.foot_nav .icon-shouye:before, .foot_nav .icon-wo:before, .foot_nav .icon-quanbudingdan:before { font-size: 1.25rem; }
+.foot_nav .nav_on { color: #2196f3; }
+.foot_nav .show { display: block; }
