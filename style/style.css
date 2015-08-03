@@ -203,7 +203,7 @@ body { font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; background
 .xidi_tab { box-shadow: none; border-bottom: 0.05rem solid #d5d5d5; }
 
 .xidi_list { display: none; }
-.xidi_list .xidi_left { border-right: 0.05rem solid #d5d5d5; z-index: 1; background: #fff; width: 3.8rem; height: 75%; position: absolute; }
+.xidi_list .xidi_left { border-right: 0.05rem solid #d5d5d5; z-index: 1; background: #fff; width: 3.8rem; height: 85%; position: absolute; }
 .xidi_list .xidi_left li { width: 3.8rem; line-height: 2.5rem; text-align: center; border-bottom: 0.05rem solid #d5d5d5; font-size: 0.7rem; }
 .xidi_list .xidi_left .xidi_on { width: 3.7rem; border-left: .15rem solid #f80; border-right: .05rem solid #fff; background: #fff; }
 .xidi_list .xidi_right { margin-left: 3.8rem; }
@@ -254,6 +254,14 @@ body { font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; background
 .wuliu .yifu_img img:nth-last-child(4n+4) { margin-right: 0; }
 
 .layermcont img { max-width: 16rem; max-height: 20rem; }
+
+.yuer { width: 16rem; height: 3.75rem; display: block; background: url(../images/pay.png) no-repeat; background-size: 100%; }
+.yuer h1 { text-align: center; font-size: 0.75rem; padding: 2.1rem .3rem 0; }
+.yuer h1 i { color: #f33; margin: 0 .2rem; }
+
+.pay h2 { font-size: 0.7rem; text-align: center; margin-top: 1rem; color: #2196f3; font-weight: bold; }
+.pay a { margin: 1rem .7rem; width: 14.6rem; height: 2.6rem; display: block; }
+.pay img { width: 100%; }
 
 .myinfo { height: 2.7rem; padding: .7rem; background: #fff; box-shadow: 0 0 0.1rem #bbb; }
 .myinfo .touxiang { float: left; }
@@ -318,6 +326,10 @@ body { font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; background
 .save .save_btn, .save .del_btn, .save .save_addr_btn { width: 6.9rem; float: right; border: none; background: #2196f3; color: #fff; height: 1.85rem; font-size: 0.6rem; border-radius: .15rem; text-align: center; }
 .save .del_btn { float: left; background: #fff; border: .05rem solid #ddd; color: #333; }
 .save .save_addr_btn { width: 14.6rem; }
+
+.article { margin: .7rem; line-height: 1.3rem; font-size: 0.65rem; text-indent: 2em; }
+.article dl { padding-top: 1rem; }
+.article dl dt { text-indent: 0em; font-size: 0.7rem; line-height: 1.6rem; }
 
 .xiadan { width: 14.6rem; }
 .xiadan input, .xiadan .input_rmb label, .input_rmb .xiadan label, .xiadan .user label, .user .xiadan label, .xiadan .password label, .password .xiadan label, .xiadan .username label, .username .xiadan label, .xiadan .yanzheng label, .yanzheng .xiadan label, .xiadan .mima label, .mima .xiadan label, .xiadan .reset label, .reset .xiadan label, .xiadan span, .xiadan select { width: 5.7rem; margin-right: .5rem; float: left; }

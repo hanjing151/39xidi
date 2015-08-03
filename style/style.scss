@@ -496,7 +496,7 @@ body{
 		z-index:1;
 		background:#fff;
 		width:$w;
-		height:75%;
+		height:85%;
 		position:absolute;
 		li{
 			width:$w;
@@ -711,6 +711,42 @@ body{
 .layermcont img{
 	max-width:16rem;
 	max-height:20rem;
+}
+
+//支付页面
+.yuer{
+	width:$body_width;
+	height:3.75rem;
+	display:block;
+	background:url(../images/pay.png) no-repeat;
+	background-size:100%;
+	h1{
+		text-align:center;
+		@include font_rem(30);
+		padding:2.1rem .3rem 0;
+		i{
+			color:#f33;
+			margin:0 .2rem;
+		}
+	}
+}
+.pay{
+	h2{
+		@include font_rem(28);
+		text-align:center;
+		margin-top:1rem;
+		color:$nav_color;
+		font-weight:bold;
+	}
+	a{
+		margin:1rem .7rem;
+		width:$body_width - 1.4rem;
+		height:2.6rem;
+		display:block;
+	}
+	img{
+		width:100%;
+	}
 }
 
 //个人中心
@@ -1038,6 +1074,22 @@ body{
 	.save_addr_btn{
 		@extend .save_btn;
 		width:$body_width - 1.4rem;
+	}
+}
+
+//用户协议
+.article{
+	margin:.7rem;
+	line-height:1.3rem;
+	@include font_rem(26);
+	text-indent:2em;
+	dl{
+		padding-top:1rem;
+		dt{
+			text-indent:0em;
+			@include font_rem(28);
+			line-height:1.6rem;
+		}
 	}
 }
 
