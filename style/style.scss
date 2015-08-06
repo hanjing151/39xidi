@@ -7,6 +7,7 @@ $body_width:16rem;
 $box-shadow:#bbb;
 $input-shadow:#d5d5d5;
 $nav_color:#2196f3;
+$head_height:2.5rem;
 $foot_height:2.5rem;
 $color_yellow:#ffc107;
 $body_color:#f1f1f1;
@@ -18,7 +19,7 @@ body{
 .wrap{
 	width:$body_width;
 	margin:0 auto;
-	padding-bottom:$foot_height;
+	padding:$foot_height 0;
 }
 //导航下拉框
 .more_list{
@@ -32,8 +33,8 @@ body{
 		@include width_rem(166);
 		position:absolute;
 		z-index:999;
-		right:.35rem;
-		top:2.75rem;
+		right:.55rem;
+		top:.45rem;
 		padding:.25rem 0 ;
 		text-align:center;
 		background:rgba(33,150,243,0.9);
@@ -48,14 +49,17 @@ body{
 	}
 }
 //头部
-.header{
-		$h:2.5rem;
-		padding:0 .7rem;
-		height:$h;
+.header{	
+		width:$body_width;
+		height:$head_height;
 		color: #fff;
-		line-height:$h;
+		line-height:$head_height;
 		background:$nav_color;
+		position:fixed;
+		top:0;
+		z-index:100;
 		.logo{
+			margin-left:.7rem;
 			width:4.8rem;
 			float: left;
 			text-indent:-99rem;
@@ -68,15 +72,15 @@ body{
 			height:1rem;
 			display:block;
 			float: right;
-			margin-right:.05rem;
-			margin-top:($h - 1) / 2 ;
+			margin-right:.7rem;
+			margin-top:($head_height - 1) / 2 ;
 			background:url(../images/more.png) no-repeat right;
-			background-size:.24rem;	
-			padding-right:.7rem;			
+			background-size:.24rem;				
 		}
 		.details{
+			margin-left:.7rem;
 			@include font_rem(36);
-			height:$h;
+			height:$head_height;
 			background:url(../images/left.png) no-repeat left;
 			background-size:.8rem;	
 			.icon-houtui,.icon-houtui:before{
@@ -400,6 +404,9 @@ body{
 	height:$h;
 	background:#fff;
 	box-shadow:0 0rem .1rem $input-shadow;
+	border-bottom:.05rem solid #e7e7e7;
+	position:fixed;
+	z-index:99;
 	li{ 
 		$li_h:$h - .1rem;
 		width:$body_width / 2 ; 
@@ -417,7 +424,7 @@ body{
 .state_body{
 	$w:$body_width;
 	width:$w;
-	margin:.7rem 0;
+	margin:$head_height 0 .7rem;
 	ul{
 		display:none;
 		a{ 
@@ -488,6 +495,7 @@ body{
 	box-shadow:none;
 	border-bottom:.05rem solid $input-shadow;
 }
+.xidi_box{ margin-top:$head_height;}
 .xidi_list{
 	display:none;
 	.xidi_left{
@@ -678,7 +686,7 @@ body{
 				margin-top:-.08rem;
 				@include font_rem(26);
 				float:left;
-				width:11.5rem;
+				width:11.4rem;
 				line-height:1rem;
 				p{
 					@include font_rem(24);
@@ -701,7 +709,7 @@ body{
 			//background:red;
 			width:2.6rem;
 			height:2.6rem;
-			margin:.05rem .14rem 0 0;
+			margin:.05rem .13rem 0 0;
 			&:nth-last-child(4n+4){
 				margin-right:0;
 			}

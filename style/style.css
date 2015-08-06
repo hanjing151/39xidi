@@ -108,17 +108,17 @@ html { font-size: 20px; }
 
 body { font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; background: #f1f1f1; }
 
-.wrap { width: 16rem; margin: 0 auto; padding-bottom: 2.5rem; }
+.wrap { width: 16rem; margin: 0 auto; padding: 2.5rem 0; }
 
 .more_list { position: absolute; width: 16rem; height: 100%; z-index: 998; display: none; background: rgba(255, 255, 255, 0); }
-.more_list ul { width: 4.15rem; position: absolute; z-index: 999; right: .35rem; top: 2.75rem; padding: 0.25rem 0; text-align: center; background: rgba(33, 150, 243, 0.9); font-size: 0.65rem; }
+.more_list ul { width: 4.15rem; position: absolute; z-index: 999; right: .55rem; top: .45rem; padding: 0.25rem 0; text-align: center; background: rgba(33, 150, 243, 0.9); font-size: 0.65rem; }
 .more_list ul li { line-height: 1.75rem; }
 .more_list ul li a { color: #fff; display: block; }
 
-.header { padding: 0 .7rem; height: 2.5rem; color: #fff; line-height: 2.5rem; background: #2196f3; }
-.header .logo { width: 4.8rem; float: left; text-indent: -99rem; font-size: 0.75rem; background: url(../images/applogo.png) no-repeat left; background-size: 100%; }
-.header .more { width: 2rem; height: 1rem; display: block; float: right; margin-right: .05rem; margin-top: 0.75rem; background: url(../images/more.png) no-repeat right; background-size: .24rem; padding-right: .7rem; }
-.header .details { font-size: 0.9rem; height: 2.5rem; background: url(../images/left.png) no-repeat left; background-size: .8rem; }
+.header { width: 16rem; height: 2.5rem; color: #fff; line-height: 2.5rem; background: #2196f3; position: fixed; top: 0; z-index: 100; }
+.header .logo { margin-left: .7rem; width: 4.8rem; float: left; text-indent: -99rem; font-size: 0.75rem; background: url(../images/applogo.png) no-repeat left; background-size: 100%; }
+.header .more { width: 2rem; height: 1rem; display: block; float: right; margin-right: .7rem; margin-top: 0.75rem; background: url(../images/more.png) no-repeat right; background-size: .24rem; }
+.header .details { margin-left: .7rem; font-size: 0.9rem; height: 2.5rem; background: url(../images/left.png) no-repeat left; background-size: .8rem; }
 .header .details .icon-houtui, .header .details .icon-houtui:before { font-size: 0.75rem; color: #fff; padding-left: 1.6rem; }
 
 .banner { position: relative; width: 16rem; height: 6.75rem; overflow: hidden; }
@@ -183,11 +183,11 @@ body { font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; background
 .index .bottom_btn { position: absolute; bottom: .4rem; margin: 0 .9rem; border-radius: 0; }
 .index .bottom_btn a { width: 7rem; height: 2.25rem; display: block; display: inline-block; margin-right: .1rem; }
 
-.state_tab, .xidi_tab { width: 16rem; height: 2.1rem; background: #fff; box-shadow: 0 0rem 0.1rem #d5d5d5; }
+.state_tab, .xidi_tab { width: 16rem; height: 2.1rem; background: #fff; box-shadow: 0 0rem 0.1rem #d5d5d5; border-bottom: .05rem solid #e7e7e7; position: fixed; z-index: 99; }
 .state_tab li, .xidi_tab li { width: 8rem; height: 2rem; line-height: 2rem; float: left; text-align: center; font-size: 0.7rem; border-bottom: .1rem solid #fff; }
 .state_tab .tab_on, .xidi_tab .tab_on { border-bottom: 0.1rem solid #2196f3; }
 
-.state_body { width: 16rem; margin: .7rem 0; }
+.state_body { width: 16rem; margin: 2.5rem 0 0.7rem; }
 .state_body ul { display: none; }
 .state_body ul a { display: block; }
 .state_body ul a:active, .state_body ul a:visited { color: #333; }
@@ -201,6 +201,8 @@ body { font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; background
 .state_body ul li dl .icon-wuliuxingye:before, .state_body ul li dl .icon-dingdan:before, .state_body ul li dl .icon-sort:before, .state_body ul li dl .icon-baodijine:before, .state_body ul li dl .icon-shijian:before { font-size: 0.9rem; margin-right: .3rem; }
 
 .xidi_tab { box-shadow: none; border-bottom: 0.05rem solid #d5d5d5; }
+
+.xidi_box { margin-top: 2.5rem; }
 
 .xidi_list { display: none; }
 .xidi_list .xidi_left { border-right: 0.05rem solid #d5d5d5; z-index: 1; background: #fff; width: 3.8rem; height: 85%; position: absolute; }
@@ -245,12 +247,12 @@ body { font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; background
 .wuliu ul { margin-left: .25rem; }
 .wuliu ul li { color: #222121; border-left: .1rem solid #e0e0e0; padding-bottom: .5rem; }
 .wuliu ul li i { width: 0.6rem; height: 0.6rem; background: #e0e0e0; border-radius: 100%; border: .1rem solid #e8e8e8; display: block; float: left; margin: 0 1rem 0 -0.43rem; }
-.wuliu ul li .step { margin-top: -.08rem; font-size: 0.65rem; float: left; width: 11.5rem; line-height: 1rem; }
+.wuliu ul li .step { margin-top: -.08rem; font-size: 0.65rem; float: left; width: 11.4rem; line-height: 1rem; }
 .wuliu ul li .step p, .wuliu ul li .step h4 { font-size: 0.6rem; color: #757575; }
 .wuliu ul li:first-child i { background: #ff4081; border: .1rem solid #ffbad2; }
 .wuliu ul li:last-child { height: auto; border-left: .1rem solid #fff; }
 .wuliu .yifu_img { margin-top: .3rem; }
-.wuliu .yifu_img img { width: 2.6rem; height: 2.6rem; margin: .05rem .14rem 0 0; }
+.wuliu .yifu_img img { width: 2.6rem; height: 2.6rem; margin: .05rem .13rem 0 0; }
 .wuliu .yifu_img img:nth-last-child(4n+4) { margin-right: 0; }
 
 .layermcont img { max-width: 16rem; max-height: 20rem; }
