@@ -130,7 +130,7 @@ body { font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif; background
 
 .near_body img { max-width: 16rem; }
 
-.index { width: 16rem; height: 15rem; background: url(../images/index.png) no-repeat center; background-size: 100%; display: block; text-align: center; margin-top: .5rem; position: relative; }
+.index { width: 16rem; height: 15rem; background: url(../images/index.png) no-repeat center 52%; background-size: 100%; display: block; text-align: center; margin-top: .5rem; position: relative; }
 .index h1 { padding-top: 0.6rem; font-size: 0.6rem; }
 .index h1 a { color: #757575; }
 .index h1 b { margin: 0 .2rem; color: #f33; }
